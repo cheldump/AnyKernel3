@@ -4,27 +4,21 @@
 ### AnyKernel setup
 # begin properties
 properties() { '
-kernel.string=lilium by herobuxx but forked
+kernel.string=lilium kernul
 do.devicecheck=1
 do.modules=0
 do.systemless=1
 do.cleanup=1
 do.cleanuponabort=0
-device.name1=citrus
-device.name2=lime
-device.name3=lemon
-device.name4=pomelo
-device.name5=chime
-device.name6=juice
+device.name1=tissot
 supported.versions=
 supported.patchlevels=
 '; } # end properties
 
 ## boot shell variables
-block=/dev/block/bootdevice/by-name/boot;
-is_slot_device=0;
+block=/dev/block/platform/soc/7824900.sdhci/by-name/boot;
+is_slot_device=1;
 ramdisk_compression=auto;
-patch_vbmeta_flag=auto;
 
 # import functions/variables and setup patching - see for reference (DO NOT REMOVE)
 . tools/ak3-core.sh && attributes;
